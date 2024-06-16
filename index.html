@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fahmi Fauzan - Biodata</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9d1189fcaa.js" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script> 
 </head>
 <body>
-    <div id="card" style="width: 400px; margin: auto; border: 1px solid black; height: 95vh;">
-        <header id="card-header" style="padding: 25px 30px;">
+    <button class="theme" onclick="onDark()"><i id="theme-icon" class="fa-solid fa-sun"></i></button>
+    <div id="card">
+        <header id="card-header">
             <h1>Fahmi Fauzan</h1>
             <h3>Computer Science</h3>
         </header>
-        <img src="fahmi.jpg" alt="Fahmi Fauzan Profile Picture" width="100%" height="250px" style="object-fit: cover;">
-        <div id="biodata" style="padding: 5px 30px;">
+        <img class="profile-image" src="fahmi.jpg" alt="Fahmi Fauzan Profile Picture">
+        <div id="biodata">
             <p>Fahmi Fauzan</p>
             <p>Bandung, 9 September 2001</p>
             <p>Cikarang Selatan</p>
-            <p style="font-weight: bold;">Contact me</p>
+            <p>Contact me:</p>
             <ul>
                 <li><a href="mailto:fahmi.fauzan@binus.ac.id" target="_blank">Email</a></li>
                 <li><a href="https://wa.me/6281380878907" target="_blank">Whatsapp</a></li>
                 <li><a href="https://bit.ly/linkedin-fahmi" target="_blank">LinkedIn</a></li>
             </ul>
-
+            <button class="savecontact" onclick="displayNotif()">Save Contact</button>
         </div>
-
     </div>
 </body>
 </html>
